@@ -14,4 +14,9 @@ object Repository {
         return productListener
     }
 
+    fun createTestData()
+    {
+        //add some products to the products list
+    }
+
 }
