@@ -2,6 +2,7 @@ package com.example.shoppingliststartcodekotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.shoppingliststartcodekotlin.adapters.ProductAdapter
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Repository.getData().observe(this, Observer {
+            Log.d("Products","Found ${it.size} products")
             updateUI()
         })
     }
