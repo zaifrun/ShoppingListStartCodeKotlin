@@ -12,7 +12,7 @@ object Repository {
     fun getData(): MutableLiveData<MutableList<Product>> {
         if (products.isEmpty())
             createTestData()
-        productListener.value = products
+        productListener.value = products //we inform the listener we have new data
         return productListener
     }
 
