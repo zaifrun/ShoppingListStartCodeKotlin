@@ -19,6 +19,8 @@ object Repository {
     fun createTestData()
     {
         //add some products to the products list - for testing purposes
+        products.add(Product(name="tomater"))
+        products.add(Product(name="bønner"))
     }
 
 }
