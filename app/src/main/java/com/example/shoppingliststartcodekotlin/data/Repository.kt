@@ -1,5 +1,6 @@
 package com.example.shoppingliststartcodekotlin.data
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 
 object Repository {
@@ -19,6 +20,7 @@ object Repository {
     fun createTestData()
     {
         //add some products to the products list - for testing purposes
+        Log.d("Repository","create testdata")
         products.add(Product(name="tomater"))
         products.add(Product(name="bønner"))
     }
